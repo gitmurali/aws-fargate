@@ -1,0 +1,57 @@
+<head>
+  <title> Cloud Academy </title>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+.page-wrap{   
+    font-family: 'Lato', sans-serif;
+    }
+
+header::after{
+  display:block;
+  position:fixed;
+}
+
+header{ 
+    height:100vh; 
+    background-image: url('image.jpeg');
+    background-size: cover;
+    z-index: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+
+.header-wrap{
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:-10px;
+    z-index: 1;
+    font-size: 50px;
+    color: ghostwhite;
+    text-shadow: -2px 2px 5px rgba(0,0,0,0.7); // this shadow is maintained across header items
+}
+   
+header::before{
+    content:"";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(9,9,9, 0.7);
+}
+  </style>
+</head>
+<div class="page-wrap">
+    <header> 
+      <h1> AWS Cloud demos!!!! <Label></Label></h1>
+    </header>       
+</div>
